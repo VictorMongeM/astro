@@ -1,18 +1,20 @@
 ---
 const tasks = [
-  "Estudiar Astro",
-  "Hacer la tarea de matemáticas",
-  "Preparar la presentación",
-  "Leer un libro",
+  "Hacer la práctica de astro",
+  "Correr docker node:apline",
+  "Subir la actividad a github",
+  "Estudiar para el examen",
+  "Hacer ejercicio"
 ];
 ---
-<html>
+<html lang="es">
+<meta charset="UTF-8">
   <head>
-    <title>Mis Tareas Pendientes</title>
+    <title>Mis tareas pendientes. Víctor Monge</title>
     <style>
       /* Estilos para el botón */
       .big-red-button {
-        background-color: red;
+        background-color: blue;
         color: white;
         font-size: 20px;
         padding: 15px 30px;
@@ -33,7 +35,7 @@ const tasks = [
     </style>
   </head>
   <body>
-    <h1>Mis Tareas Pendientes</h1>
+    <h1>Mis tareas pendientes. Víctor Monge</h1>
     <ul>
       {tasks.map((task) => (
         <li>{task}</li>
@@ -41,11 +43,11 @@ const tasks = [
     </ul>
 
     <!-- Botón rojo -->
-    <button class="big-red-button" id="helloButton">Haz clic aquí</button>
+    <button class="big-red-button" id="helloButton">Haz clic aqui</button>
 
-    <!-- Mensaje "Hola, mundo" -->
+    <!-- Mensaje "Hola, has presionado el boton" -->
     <div id="messageContainer" class="message" style="display: none;">
-      ¡Hola, mundo!
+      ¡Hola, has presionado el boton!
     </div>
 
     <!-- Script para manejar el clic del botón -->
